@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".activity.LikeActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name_group"
+            android:layout_gravity="center_vertical"
+            android:text="Понравилось"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:text="Здесь будут альбомы которые вам понравились"
+        android:textColor="#6B6B6B"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

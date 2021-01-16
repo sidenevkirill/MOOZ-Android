@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".activity.PopularFragment">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/i"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f5f5f5">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Поиск по альбомам"
+            android:background="#f5f5f5"
+            android:textColorHint="#8f8f8f"
+            android:cursorVisible="true"
+            android:layout_marginRight="40dp" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/magnify_outline"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:id="@+id/rv_playlist">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

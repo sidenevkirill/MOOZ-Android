@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MOOZ</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_all">Воспроизвести все</string>
+    <string name="title_home">Главное</string>
+    <string name="app_title">Аудиозаписи</string>
+    <string name="app_profile">Профиль</string>
+    <string name="app_save">Скачанные треки</string>
+    <string name="app_loca">Треки на устройстве</string>
+    <string name="title_music">Рекоммендации</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_popular">Популярное</string>
+    <string name="title_new">Новинки</string>
+    <string name="title_chart">Чарт Музыки</string>
+    <string name="title_rec">Специально для Вас</string>
+    <string name="title_account">Профиль</string>
+    <string name="title_search">Поиск</string>
+    <string name="title_album">Альбомы</string>
+    <string name="title_activity_bar">BarActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

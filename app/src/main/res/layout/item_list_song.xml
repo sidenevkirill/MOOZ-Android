@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/i"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="17dp"
+        android:layout_toStartOf="@+id/playlist_saved_icon"
+        android:maxLines="1"
+        android:text="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/i"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/iv_ava"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/image" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name"
+        android:layout_toStartOf="@+id/playlist_saved_icon"
+        android:maxLines="1"
+        android:text="title"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/i"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toStartOf="@+id/playlist_saved_icon"
+        android:layout_toEndOf="@+id/i"
+        android:maxLines="1"
+        android:text="artist" />
+
+    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="33dp"
+        app:mfb_rotation_duration="700"
+        app:mfb_rotation_angle="360"
+        app:mfb_favorite_image="@drawable/heart"
+        app:mfb_not_favorite_image="@drawable/heart_outline"
+        app:mfb_animate_unfavorite="true"
+        app:mfb_bounce_duration="0" />
+
+    <ImageButton
+        android:id="@+id/settings_item"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/dots_vertical"
+        android:tint="#000000" />
+
+</RelativeLayout>
